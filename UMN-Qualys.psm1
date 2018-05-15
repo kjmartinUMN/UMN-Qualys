@@ -23,6 +23,8 @@
 
 #endregion
 
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
 #region Connect-Qualys
 function Connect-Qualys{
     <#
